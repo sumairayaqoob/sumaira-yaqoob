@@ -1,0 +1,872 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#  Import the numpy package under the name np\n",
+    "\n",
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a null vector of size 10\n",
+    "import numpy as np\n",
+    "np.zeros((10,10))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,\n",
+       "       27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,\n",
+       "       44, 45, 46, 47, 48, 49])"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a vector with values ranging from 10 to 49\n",
+    "import numpy as np\n",
+    "np.arange(10,50)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(40,)"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Find the shape of previous array in question 3\n",
+    "import numpy as np\n",
+    "x=np.arange(10,50)\n",
+    "x.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "int32\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Print the type of the previous array in question 3\n",
+    "import numpy as np\n",
+    "x=np.arange(10,50)\n",
+    "print(x.dtype)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<module 'numpy.version' from 'C:\\\\Users\\\\w\\\\anaconda3\\\\lib\\\\site-packages\\\\numpy\\\\version.py'>\n",
+      "<function show at 0x0000016525573D30>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# . Print the numpy version and the configuration\n",
+    "import numpy as np\n",
+    "print(np.version)\n",
+    "print(np.show_config)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Print the dimension of the array in question 3\n",
+    "import numpy as np\n",
+    "x=np.arange(10,50)\n",
+    "print(x.ndim)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ True,  True,  True],\n",
+       "       [ True,  True,  True]])"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a boolean array with all the True values\n",
+    "import numpy as np\n",
+    "arr=np.array([[1.,5.,3.],[8.,4.,16.]])\n",
+    "arr2=np.array([[0.,4.,1.],[7.,2.,12.]])\n",
+    "arr\n",
+    "arr2<arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a two dimensional array\n",
+    "import numpy as np\n",
+    "x = np.array([[2, 4, 6], [6, 8, 10]])\n",
+    "x\n",
+    "x.ndim"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a three dimensional array\n",
+    "import numpy as np\n",
+    "x = np.array([[[2, 4, 6], [6, 8, 10], [2,3,4]]])\n",
+    "x\n",
+    "x.ndim"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([8, 7, 6, 5, 4, 3, 2, 1])"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Reverse a vector (first element becomes last)\n",
+    "x=np.array([1,2,3,4,5,6,7,8])\n",
+    "x\n",
+    "x[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0., 0., 0., 0., 0., 1., 0., 0., 0., 0.])"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a null vector of size 10 but the fifth value which is 1\n",
+    "x=np.zeros((10))\n",
+    "x[5]=1\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 0., 0.],\n",
+       "       [0., 1., 0.],\n",
+       "       [0., 0., 1.]])"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a 3x3 identity matrix\n",
+    "x=np.identity(3)\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1.        , 0.5       , 0.33333333, 0.25      , 0.2       ])"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr = np.array([1, 2, 3, 4, 5]) Convert the data type of the given array from int to float\n",
+    "arr = np.array([1, 2, 3, 4, 5]) \n",
+    "arr=1/arr\n",
+    "arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0.,  8.,  3.],\n",
+       "       [28., 10., 72.]])"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr1 = np.array([[1., 2., 3.], [4., 5., 6.]])  arr2 = np.array([[0., 4., 1.],[7., 2., 12.]])Multiply arr1 with arr2\n",
+    "arr1 = np.array([[1., 2., 3.], [4., 5., 6.]])\n",
+    "arr2 = np.array([[0., 4., 1.],[7., 2., 12.]])\n",
+    "arr1*arr2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[False,  True, False],\n",
+       "       [ True, False,  True]])"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr1 = np.array([[1., 2., 3.],[4., 5., 6.]]) arr2 = np.array([[0., 4., 1.],[7., 2., 12.]])Make an array by comparing both the arrays provided above\n",
+    "arr1 = np.array([[1., 2., 3.],[4., 5., 6.]])  \n",
+    "arr2 = np.array([[0., 4., 1.],[7., 2., 12.]])\n",
+    "arr1<arr2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 3, 5, 7, 9])"
+      ]
+     },
+     "execution_count": 117,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Extract all odd numbers from arr with values(0-9)\n",
+    "arr=np.array([0,1,2,3,4,5,6,7,8,9])\n",
+    "arr[1:10:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 0, -1,  2, -1,  4, -1,  6, -1,  8, -1])"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Replace all odd numbers to -1 from previous array\n",
+    "arr=np.array([0,1,2,3,4,5,6,7,8,9])\n",
+    "arr[1:10:2]=-1\n",
+    "arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 0,  1,  2,  3,  4, 12, 12, 12, 12,  9])"
+      ]
+     },
+     "execution_count": 124,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr = np.arange(10) Replace the values of indexes 5,6,7 and 8 to 12\n",
+    "arr=np.array([0,1,2,3,4,5,6,7,8,9])\n",
+    "arr[5:-1]=12\n",
+    "arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 1., 1., 1., 1., 1.],\n",
+       "       [1., 0., 0., 0., 0., 1.],\n",
+       "       [1., 0., 0., 0., 0., 1.],\n",
+       "       [1., 0., 0., 0., 0., 1.],\n",
+       "       [1., 0., 0., 0., 0., 1.],\n",
+       "       [1., 1., 1., 1., 1., 1.]])"
+      ]
+     },
+     "execution_count": 131,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a 2d array with 1 on the border and 0 inside\n",
+    "x = np.ones([6,6])\n",
+    "x[1:-1,1:-1]=0\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 1,  2,  3],\n",
+       "       [ 4, 12,  6],\n",
+       "       [ 7,  8,  9]])"
+      ]
+     },
+     "execution_count": 136,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr2d = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]]) Replace the value 5 to 12\n",
+    "arr2d = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])\n",
+    "arr2d[1][1]=12\n",
+    "arr2d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[64, 64, 64],\n",
+       "        [64, 64, 64]],\n",
+       "\n",
+       "       [[ 7,  8,  9],\n",
+       "        [10, 11, 12]]])"
+      ]
+     },
+     "execution_count": 141,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])Convert all the values of 1st array to 64\n",
+    "arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])\n",
+    "arr3d[0]=64\n",
+    "arr3d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0, 1, 2, 3, 4])"
+      ]
+     },
+     "execution_count": 149,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Make a 2-Dimensional array with values 0-9 and slice out the first 1st 1-D array from it\n",
+    "arr2d = np.array([[0,1,2,3,4],[5,6,7,8,9]])\n",
+    "arr2d[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 144,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Make a 2-Dimensional array with values 0-9 and slice out the 2nd value from 2nd 1-D array from it\n",
+    "arr2d = np.array([[0,1,2,3,4],[5,6,7,8,9]])\n",
+    "arr2d[1,1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 184,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([2, 7])"
+      ]
+     },
+     "execution_count": 184,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Make a 2-Dimensional array with values 0-9 and slice out the third column but only the first two rows\n",
+    "arr2d=np.array([[0,1,2,3,4],[5,6,7,8,9]])\n",
+    "arr2d[:2,2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 218,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[-1.39073892 -0.06391894  1.21159586  1.63380537 -0.35897329 -0.55822424\n",
+      "  -0.87617854 -0.83333862  0.74200261 -0.16323895]\n",
+      " [-0.13374614  2.38111894 -0.32652698  1.39059155  1.00836016 -1.59272077\n",
+      "  -0.14881954 -0.38266695 -0.13365666  0.14218663]\n",
+      " [ 2.26604232  0.44478783 -2.23835544  0.68698346  0.26744927 -0.57313735\n",
+      "  -0.13315811 -0.07177595  0.62484818 -1.69404588]\n",
+      " [-0.26553131  0.49907273  0.28352302 -0.91936078  0.08540481  0.88563966\n",
+      "   0.58922469  0.01253435 -0.21159543  1.20751813]\n",
+      " [-0.1151854   0.08546231 -1.65822575  0.44337054  0.98947093 -0.41078404\n",
+      "  -0.86888669  1.98753968 -0.15512537 -0.16124817]\n",
+      " [-0.94940463 -2.25453612 -0.64922569 -1.07865152 -2.08115379  2.40872248\n",
+      "  -0.47246794 -0.52869111  0.16011803  0.98766603]\n",
+      " [-1.03993537 -0.216933   -1.48071064 -0.76831857  0.2932286   1.28810482\n",
+      "   0.75091975  0.23727242 -1.01843567 -0.31962839]\n",
+      " [-0.90295079 -1.18797954 -1.6895638   0.1479834   1.94113433 -0.65407955\n",
+      "  -0.48582361  0.08613835  0.62046925  0.83337798]\n",
+      " [-0.26087128 -0.68597669  0.53259837 -0.53748253 -0.36939435  0.04091733\n",
+      "  -0.40437364  0.40101752  1.05563842  0.29141473]\n",
+      " [-1.22140681  0.83373197 -0.69731434 -1.09741843  0.91475321  0.77955732\n",
+      "   0.77531756  0.92671264 -1.57340037 -0.64961183]]\n",
+      "-2.254536124964331 2.4087224815243164\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Create a 10x10 array with random values and find the minimum and maximum values\n",
+    "x=np.random.randn(10,10)\n",
+    "print(x)\n",
+    "xmin, xmax = x.min(), x.max()\n",
+    "print(xmin, xmax)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 221,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([2, 4])"
+      ]
+     },
+     "execution_count": 221,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8]) Find the common items between a and b\n",
+    "a = np.array([1,2,3,2,3,4,3,4,5,6])\n",
+    "b = np.array([7,2,10,2,7,4,9,4,9,8])\n",
+    "np.intersect1d(a,b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 222,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(array([1, 3, 5, 7], dtype=int64),)"
+      ]
+     },
+     "execution_count": 222,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8])Find the positions where elements of a and b match\n",
+    "a = np.array([1,2,3,2,3,4,3,4,5,6]) \n",
+    "b = np.array([7,2,10,2,7,4,9,4,9,8])\n",
+    "np.where(a==b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 233,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0.0457127 ,  1.44742576, -1.52908626, -0.12428661],\n",
+       "       [ 0.5325593 , -0.86843071, -0.04523402,  1.30005479],\n",
+       "       [-0.49256252,  1.41628181,  2.03523592,  0.0594793 ],\n",
+       "       [ 1.47556016, -0.79426985,  0.07120896,  1.02882195],\n",
+       "       [-0.0547426 , -0.98700721,  0.56725669,  1.02183461]])"
+      ]
+     },
+     "execution_count": 233,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# . names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe']) data = np.random.randn(7, 4)\n",
+    "#Find all the values from array data where the values from array names are not equal to Will\n",
+    "names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])\n",
+    "data = np.random.randn(7, 4)\n",
+    "data[names!= 'Will']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 243,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-0.64264746,  0.20244413, -0.41797836, -0.76245974],\n",
+       "       [ 0.031825  ,  1.04610921, -1.06770227, -0.89885969]])"
+      ]
+     },
+     "execution_count": 243,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# . names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe']) data = np.random.randn(7, 4)Find all the values from array data where the values from array names are not equal to Will and Joe\n",
+    "names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])\n",
+    "data = np.random.randn(7, 4)\n",
+    "data[(names!= 'Will')&(names!= 'Joe')]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 254,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[10.37377448, 12.27958188,  6.17017344],\n",
+       "       [11.77704306, 11.56534774,  2.0155557 ],\n",
+       "       [ 2.70117628, 14.09437464,  4.2411122 ],\n",
+       "       [ 4.09841477,  6.29512966,  8.02210227],\n",
+       "       [11.26476196,  2.71070757,  2.01788726]])"
+      ]
+     },
+     "execution_count": 254,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create a 2D array of shape 5x3 to contain decimal numbers between 1 and 15.\n",
+    "np.random.uniform(1, 15, size=(5, 3))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 282,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[ 0.,  1.,  2.,  3.],\n",
+       "        [ 4.,  5.,  6.,  7.]],\n",
+       "\n",
+       "       [[ 8.,  9., 10., 11.],\n",
+       "        [12., 13., 14., 15.]]])"
+      ]
+     },
+     "execution_count": 282,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create an array of shape (2, 2, 4) with decimal numbers between 1 to 16.\n",
+    "np.arange(16.0).reshape(2,2,4)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#  Swap axes of the array you created in Question 32\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 294,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])"
+      ]
+     },
+     "execution_count": 294,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create an array of size 10, and find the square root of every element in the array, if the values less than 0.5, replace them with 0\n",
+    "x=np.arange(10)\n",
+    "y=np.sqrt(x)\n",
+    "np.where(y<0.5,y,0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 270,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-0.28095831, -1.23658432,  0.52136678,  1.3780737 ,  0.92404756,\n",
+       "        1.02758523,  1.99461082,  0.73550978,  0.25817595, -1.10796362,\n",
+       "       -0.76128868,  0.03323312])"
+      ]
+     },
+     "execution_count": 270,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create two random arrays of range 12 and make an array with the maximum values between each element of the two arrax=ys\n",
+    "arrax=np.random.randn(12)\n",
+    "ys=np.random.randn(12)\n",
+    "np.maximum(arrax,ys)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 271,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['Bob', 'Joe', 'Will'], dtype='<U4')"
+      ]
+     },
+     "execution_count": 271,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])Find the unique names and sort them out!\n",
+    "names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])\n",
+    "np.unique(names)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
